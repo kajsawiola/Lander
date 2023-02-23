@@ -6,11 +6,14 @@
     {
         public string namn, styrestyp, huvudstad, invånartal;
 
+        public void Print() { Console.WriteLine("Land: "+  namn + "Styrestyp: " + styrestyp + "Huvudstad: " + huvudstad + "Invånaral: " + invånartal); }
+
         static void Main(string[] args)
         {
             Land sverige = new Land { namn = "Sverige", styrestyp = "monarki", huvudstad = "Stockholm", invånartal = "10512820" };
             Land tyskland = new Land { namn = "Tyskland", styrestyp = "republik", huvudstad = "Berlin", invånartal = "83783902" };
             Land sanMarino = new Land { namn = "SanMarino", styrestyp = "republik", huvudstad = "SanMarino", invånartal = "33600" };
+            sverige.Print();
         }
     }
 }
